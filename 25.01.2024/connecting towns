@@ -74,7 +74,10 @@ def connectingTowns(n, routes):
         p*=route
     return p%1234567
 
-    # Write your code here
+    n=int(input())
+for i in range (n):
+    px,py,qx,qy=map(int,input().split())
+    print(2*qx-px,2*qy-py)
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
